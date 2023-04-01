@@ -1,0 +1,7 @@
+I am just including a file of the solutions for my own sake, because i don't feel like generating new codes every time I test it :x
+
+FU1 -> FU2 = "hello" 23
+FU2 -> FU1 = "hi how are you?" 12
+HQ -> FU2 = DES "please stop talking" key: never_reuse_this
+FU2 -> HQ = "sorry" 2
+HQ -> FU2 = 3DES "it is fine" key: this_needs_to_be_very_long_wow
