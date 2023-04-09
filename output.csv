@@ -1,5 +1,6 @@
-FU1, FU2, CS, KHOOR, hello
-FU2, FU1, CS, ZA ZGO SJW QGM?, hi how are you?
-HQ, FU2, DES, 5ceeec120d69c62d867e51eac8a8893aa548a34a4f8fb738436d59f0dc9025d41490f86af6d4bf7c, please stop talking
-FU2, HQ, CS, AWZZG, sorry
-HQ, FU2, 3DES, ce6602701232bc54496790e3d56eb00409cfcef67fbf0bd966dbd0ad7f7b325b, it is fine
+HQ, FU2, CS, tqxxa, hello
+HQ, FU1, DES, bce1e877f540ce85157d9446a4ddfcd224689369936557822cd8599a94139551b25686839cf1b428aa28d4a5281b2a23, hello! i am a test case!
+HQ, FU1, 3DES, b8559a9a046362936128dda1a277382cc5731a4f625754b224a34e1146b30ca7e89e8e7200b00225ccbb3f7d4a4c02ea, this message is a secret
+HQ, FU2, CS, tqxxa, hello
+HQ, FU1, DES, 841e8075d0c242ac05a8eb37a1e50f5c0cdbaaf22239943e88f456aa8599e32aafea9db02ad7f82a, hello i am a test
+HQ, FU1, 3DES, 082d311bf7bdaee996688f7cd74b38679c82cad2dbe04dc8c779b9357e01fa2e, i am secret

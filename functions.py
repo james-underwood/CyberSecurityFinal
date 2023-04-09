@@ -3,28 +3,42 @@ import pyDES
 import os
 
 def caesar_encrypt(plaintext):
-    ciphertext = ""
-    shift = int(input("Enter the shift amount: "))
-    for char in plaintext:
-        if char.isalpha():
-            # shift the character by the specified number of positions
-            encrypted_char = chr((ord(char) - 65 + shift) % 26 + 65)
+    ans = ""
+    n = int(input("Enter the key to encrypt: "))
+    # iterate over the given text
+    for i in range(len(plaintext)):
+        ch = plaintext[i]
+        
+        # check if space is there then simply add space
+        if ch==" ":
+            ans+=" "
+        # check if a character is uppercase then encrypt it accordingly 
+        elif (ch.isupper()):
+            ans += chr((ord(ch) + n-65) % 26 + 65)
+        # check if a character is lowercase then encrypt it accordingly
+        
         else:
-            encrypted_char = char
-        ciphertext += encrypted_char
-    return ciphertext
+            ans += chr((ord(ch) + n-97) % 26 + 97)
+    
+    return ans
 
-def caesar_decrypt(ciphertext):
-	plaintext = ""
-	shift = input("Enter the shift amount: ")
-	for char in ciphertext:
-		if char.isalpha():
-			# shift the character back by the specified number of positions
-			decrypted_char = chr((ord(char) - 65 - shift) % 26 + 65)
-		else:
-			decrypted_char = char
-		plaintext += decrypted_char
-	return plaintext
+def caesar_decrypt(plaintext):
+    letters="abcdefghijklmnopqrstuvwxyz"
+    
+    #enter the key value to decrypt
+    k = int(input("Enter the key to decrypt: "))
+    decrypted_message = ""
+
+    for ch in plaintext:
+
+        if ch in letters:
+            position = letters.find(ch)
+            new_pos = (position - k) % 26
+            new_char = letters[new_pos]
+            decrypted_message += new_char
+        else:
+            decrypted_message += ch
+    return decrypted_message
 
 def des_encrypt(plaintext):
     # Prompt the user to enter the key for encryption
